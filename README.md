@@ -1,1 +1,1 @@
-Content for http://shivrajpatil12.dev/
+Content for https://shivrajpatil12.dev/
