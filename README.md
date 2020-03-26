@@ -1,1 +1,1 @@
-Content for https://shivrajpatil.dev/
+Content for https://shivrajpatil12.github.io
