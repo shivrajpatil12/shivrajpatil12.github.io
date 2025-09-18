@@ -184,8 +184,10 @@ a.dotted-link:hover {
 }
 
 .section .section-inner {
+  border-radius: 24px; /* Curved edges */
   background: #fff;
-  padding: 30px;
+  box-shadow: 0 4px 24px rgba(60, 60, 120, 0.08); /* Optional: floating effect */
+  padding: 32px;
 }
 
 .section .heading {
@@ -203,6 +205,9 @@ a.dotted-link:hover {
 }
 
 /* About Section */
+.about.section .content p {
+    margin-bottom: 24px; /* Adjust the value as needed */
+}
 /* Latest Section */
 .latest .item {
   margin-bottom: 30px;
@@ -646,7 +651,22 @@ a.dotted-link:hover {
   .header .profile-image {
     float: none !important;
     margin: 0 auto;
+    width: auto;
+    height: auto;
+    box-shadow: 0 4px 16px rgba(60, 60, 120, 0.12);
+    margin-right: 20px;
+    object-fit: cover;
   }
+
+  .profile-image {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 24px; /* Only edges are curved, not fully round */
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(60, 60, 120, 0.15); /* Floating shadow */
+    margin-right: 28px;
+}
+
   .header .profile-content {
     float: none !important;
     text-align: center;
@@ -665,4 +685,37 @@ a.dotted-link:hover {
     width: 1360px;
     max-width: inherit;
   }
+}
+
+
+.header .container {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+    padding: 32px 32px 24px 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: box-shadow 0.3s;
+}
+
+.header .container,
+.sections-wrapper {
+    background: rgba(255, 255, 255, 0.85); /* Same background color */
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+    padding: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+
+.header .container:hover {
+    box-shadow: 0 16px 48px rgba(60, 60, 120, 0.22);
+}
+
+.btn-cta-primary.float-right {
+    margin-left: auto;
 }
